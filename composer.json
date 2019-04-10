@@ -1,0 +1,29 @@
+{
+    "name": "ferita/products",
+    "description": "A package to create-edit-delete products",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "ferita",
+            "email": "prog2100@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ferita\\Products\\": "src/",
+            "Ferita\\Products\\Database\\Seeds\\": "database/seeds/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ferita\\Products\\ProductsServiceProvider",
+                "Ferita\\Products\\CustomAuthServiceProvider"
+            ]
+        }
+    }
+}
